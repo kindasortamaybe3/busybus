@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #c9c9c9;
+    font-family: sans-serif;
+    font-size: 10px;
+  }
+  
+  .container {
+    background-image: url("/images/snazzy-image.png");
+    /*not quite sure why this is tiled?
+    Get to it later!*/
+    margin: 0 auto;
+    width: 420px;
+  }
+  
+  nav {
+    background-color: #000000;
+    margin: 0 auto;
+    padding: 15px 0 15px 15px;
+    position: fixed;
+    width: 420px;
+  }
+  
+  .arrow {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+  }
+  
+  .content {
+    display: inline-block;
+    width: 90%;
+    vertical-align: middle;
+  }
+  
+  .content h1 {
+    display: inline-block;
+    font-size: 1.8em;
+    font-weight: bold;
+    line-height: 1.5em;
+    width: 320px;
+  }
+  
+  .content h3 {
+    display: inline-block;
+    font-size: 1.4em;
+    width: 320px;
+  }
+  
+  .location {
+    border-bottom: 1px solid blue;
+    display: inline-block;
+    padding: 10px 0 15px 15px;
+  }
+  
+  .location:hover {
+    background-color: #898989;
+  }
+  
+  .restaurant-list {
+    /*change this back to 50 - this was to see how it looks "with map" space - figure out how to actually do it later*/
+    padding-top: 500px;
+  }
+  
+  .restaurant-list div {
+    border: .25%;
+    padding: 2%;
+  }
+  
