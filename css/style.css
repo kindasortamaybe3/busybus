@@ -8,49 +8,78 @@
     font-size: 10px;
   }
   
-  .container {
-    background-image: url("/images/snazzy-image.png");
-    /*not quite sure why this is tiled?
-    Get to it later!*/
-    margin: 0 auto;
-    width: 420px;
+  /* Directions: Northbound etc */
+  .direction {
+    font-size: 1em;
+    margin-left: 0.2em;
+    margin-bottom: 0.2em;
   }
-  
+
   nav {
-    background-color: #000000;
+    background-color: white;
     margin: 0 auto;
     padding: 15px 0 15px 15px;
     position: fixed;
     width: 420px;
   }
-  
+
   .arrow {
     display: inline-block;
     position: relative;
-    vertical-align: middle;
+    vertical-align: middle;}
+  
+  /* general page layout */
+  .container {
+    background-image: url("/images/snazzy-image.png");
+    margin: 0 auto;
+    overflow: hidden;
+    width: 420px;
+    /*not quite sure why this is tiled?
+    Get to it later!*/
+  }
+
+  /*box which holds the information*/
+  .infobox {
+    align-content: center;
+    background-color: yellow;
+    border: 1px solid red;
+    border-radius: 5px;
+    box-shadow: 3px 3px green;
+    display: grid;
+    font-weight: lighter;
+    grid-column-gap: 33px;
+    grid-template-columns: auto auto auto 20px;
+    height: 75px;
+    justify-content: space-between;
+    margin-left: 2px;
+    /*margin-top: 2px;*/
+    margin-bottom: 5px;
+    padding: 10px;
+    width: 380px;
   }
   
-  .content {
+  /* alignment of the content as a whole in the infobox */
+  .boxcontent {
     display: inline-block;
     width: 90%;
     vertical-align: middle;
   }
   
-  .content h1 {
+  .boxcontent h1 {
     display: inline-block;
     font-size: 1.8em;
+    color: #31077A;
     font-weight: bold;
-    line-height: 1.5em;
-    width: 320px;
+    line-height: auto /* 1.5em; */;
   }
   
-  .content h3 {
+  .boxcontent h3 {
     display: inline-block;
     font-size: 1.4em;
     width: 320px;
   }
   
-  .location {
+  /*.location {
     border-bottom: 1px solid blue;
     display: inline-block;
     padding: 10px 0 15px 15px;
@@ -58,14 +87,14 @@
   
   .location:hover {
     background-color: #898989;
-  }
+  }*/
   
-  .restaurant-list {
+  .bus-list {
     /*change this back to 50 - this was to see how it looks "with map" space - figure out how to actually do it later*/
     padding-top: 500px;
   }
   
-  .restaurant-list div {
+  .bus-list div {
     border: .25%;
     padding: 2%;
   }
