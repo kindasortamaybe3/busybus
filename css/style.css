@@ -2,7 +2,7 @@
     box-sizing: border-box;
   }
   
-  body {
+   body {
     background-color: #c9c9c9;
     font-family: sans-serif;
     font-size: 10px;
@@ -16,10 +16,12 @@
     width: 420px;
   }
 
-  .arrow {
+  .arrow, .eta {
     display: flex;
     position: relative;
-    vertical-align: middle;}
+    vertical-align: middle;
+    text-align: center;
+  }
   
   /* general page layout */
   .container {
@@ -93,10 +95,11 @@
   .bus-list {
     /*change this back to 50 - this was to see how it looks "with map" space - figure out how to actually do it later*/
     padding-top: 500px;
+    /**/
   }
   
   .bus-list div {
     border: .25%;
-    padding: 2%;
+    padding: 1.2%;
   }
   
