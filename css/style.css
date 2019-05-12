@@ -8,24 +8,6 @@
     font-size: 10px;
   }
 
-  nav {
-    background-color: white;
-    margin: 0 auto;
-    padding: 15px;
-    position: fixed;
-    
-  }
-
- .statusbar {
-    position: center;
-    width: 385px;
-  }
-
-  .map {
-    backgroundimage: url("../images/snazzy-image.png");
-  }
-
-
   /* general page layout */
   .container {
     margin: 0 auto;
@@ -35,6 +17,36 @@
     background-repeat: no-repeat;
     /*not quite sure why this is tiled?
     Get to it later!*/
+  }
+
+ .statusbar {
+    position: center;
+    width: 385px;
+    background-color: white;
+    margin: auto;
+    padding: 15px;
+    position: fixed;
+  }
+
+/*THERE MUST BE A WAY TO MAKE THIS HAPPEN IN STATUSBAR */
+  .navimage {
+    width: 385px;
+  }
+
+  .map {
+    background-image: url("../images/snazzy-image.png");
+    width: 420px;
+  }
+
+  .bus-list {
+    /*change this back to 50 - this was to see how it looks "with map" space - figure out how to actually do it later*/
+    
+    /**/
+  }
+  
+  .bus-list div {
+ /* border: .25%; */
+    padding: 1.2%;
   }
 
    /*box which holds the information*/
@@ -107,14 +119,4 @@
     background-color: #898989;
   }*/
   
-  .bus-list {
-    /*change this back to 50 - this was to see how it looks "with map" space - figure out how to actually do it later*/
-    
-    /**/
-  }
-  
-  .bus-list div {
- /* border: .25%; */
-    padding: 1.2%;
-  }
   
