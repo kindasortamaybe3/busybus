@@ -33,6 +33,7 @@
     position: center;
     width: 420px;
     background-color: white;
+    z-index: 100;
     margin: auto;
     padding: 15px;
     position: fixed;
