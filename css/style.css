@@ -1,4 +1,5 @@
 * {
+<<<<<<< HEAD
   box-sizing: border-box;
 }
 
@@ -133,3 +134,135 @@ body {
   background-color: #898989;
 }*/
 
+=======
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #c9c9c9;
+    font-family: sans-serif;
+    font-size: 10px;
+  }
+
+  /* general page layout */
+  .container {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 420px;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    /*not quite sure why this is tiled?
+    Get to it later!*/
+  }
+ .statusbar p {
+   color: red;
+ }
+ .location {
+   font-size: 20px;
+   padding-top: 10px;
+ }
+ .routes {
+   font-size: 15px;
+   padding-top: 5px;
+ }
+ .statusbar {
+    position: center;
+    width: 420px;
+    background-color: white;
+    z-index: 100;
+    margin: auto;
+    padding: 15px;
+    position: fixed;
+  }
+
+/*THERE MUST BE A WAY TO MAKE THIS HAPPEN IN STATUSBAR */
+  .navimage {
+    width: 385px;
+  }
+
+  .map {
+    background-image: url("../images/snazzy-image.png");
+    width: 420px;
+  }
+
+  .bus-list {
+    /*change this back to 50 - this was to see how it looks "with map" space - figure out how to actually do it later*/
+
+    /**/
+  }
+
+  .bus-list div {
+ /* border: .25%; */
+    padding: 1.2%;
+  }
+
+   /*box which holds the information*/
+  .infobox {
+    align-content: center;
+    background-color: yellow;
+    border: 1px solid green;
+    border-radius: 5px;
+    box-shadow: 3px 3px red;
+    display: grid;
+    font-weight: lighter;
+    grid-column-gap: 33px;
+    grid-template-columns: auto auto auto 20px;
+    margin-bottom: 5px;
+    padding: 10px;
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  .eta {
+    width: 30px;
+  }
+  .arrow, .eta {
+    display: flex;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    justify-self: flex-end;
+  }
+
+  /* alignment of the content as a whole in the infobox */
+  .boxcontent {
+    display: flex;
+    width: 90%;
+    vertical-align: middle;
+    align-items: center;
+  }
+
+  .boxcontent h1 {
+    font-size: 1.8em;
+    color: #31077A;
+    font-weight: bold;
+    line-height: auto /* 1.5em; */;
+  }
+
+  .boxcontent h3 {
+    display: flex;
+    font-size: 1.4em;
+    width: 320px;
+  }
+
+ /* Directions: Northbound etc */
+  .direction {
+    width: 85%;
+    font-size: 1em;
+    margin-left: 0.2em;
+    /* margin-right: 0.2em; */
+    margin-bottom: 0.2em;
+  }
+
+  /*.location {
+    border-bottom: 1px solid blue;
+    display: inline-block;
+    padding: 10px 0 15px 15px;
+  }
+
+  .location:hover {
+    background-color: #898989;
+  }*/
+>>>>>>> 8f9dc5dadd5380e744f188e59ca77152ea1320ef
