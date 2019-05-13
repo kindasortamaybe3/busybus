@@ -18,11 +18,22 @@
     /*not quite sure why this is tiled?
     Get to it later!*/
   }
-
+ .statusbar p {
+   color: red;
+ }
+ .location {
+   font-size: 20px;
+   padding-top: 10px;
+ }
+ .routes {
+   font-size: 15px;
+   padding-top: 5px;
+ }
  .statusbar {
     position: center;
-    width: 385px;
+    width: 420px;
     background-color: white;
+    z-index: 100;
     margin: auto;
     padding: 15px;
     position: fixed;
@@ -40,10 +51,10 @@
 
   .bus-list {
     /*change this back to 50 - this was to see how it looks "with map" space - figure out how to actually do it later*/
-    
+
     /**/
   }
-  
+
   .bus-list div {
  /* border: .25%; */
     padding: 1.2%;
@@ -67,7 +78,7 @@
     margin-right: auto;
     margin-bottom: 20px;
   }
-  
+
   .eta {
     width: 30px;
   }
@@ -75,7 +86,7 @@
     display: flex;
     position: relative;
     vertical-align: middle;
-    text-align: center;  
+    text-align: center;
     justify-self: flex-end;
   }
 
@@ -86,20 +97,20 @@
     vertical-align: middle;
     align-items: center;
   }
-  
+
   .boxcontent h1 {
     font-size: 1.8em;
     color: #31077A;
     font-weight: bold;
     line-height: auto /* 1.5em; */;
   }
-  
+
   .boxcontent h3 {
     display: flex;
     font-size: 1.4em;
     width: 320px;
   }
-  
+
  /* Directions: Northbound etc */
   .direction {
     width: 85%;
@@ -108,15 +119,13 @@
     /* margin-right: 0.2em; */
     margin-bottom: 0.2em;
   }
-  
+
   /*.location {
     border-bottom: 1px solid blue;
     display: inline-block;
     padding: 10px 0 15px 15px;
   }
-  
+
   .location:hover {
     background-color: #898989;
   }*/
-  
-  
