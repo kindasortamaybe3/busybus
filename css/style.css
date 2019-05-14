@@ -4,7 +4,7 @@
 
 body {
   background-color: #c9c9c9;
-  font-family: sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
   font-size: 10px;
 }
 
@@ -13,7 +13,7 @@ body {
   margin: 0 auto;
   overflow: hidden;
   width: 420px;
-  background-color: blueviolet;
+  background-color: #FFFFFF;
   background-repeat: no-repeat;
   /*not quite sure why this is tiled?
   Get to it later!*/
@@ -22,7 +22,7 @@ body {
 .statusbar {
   position: center;
   width: 420px;
-  background-color: white;
+  background-color: #FFFFFF;
   z-index: 100;
   margin: auto;
   padding: 15px;
@@ -30,7 +30,6 @@ body {
 }
 
 .statusbar p {
-  font-family: SFprodisplay sans-serif;
   color: #31077A;
 }
 
@@ -40,6 +39,7 @@ body {
 }
 
 .location {
+  font-weight: bold;
   font-size: 3em;
   padding-top: 10px;
 }
@@ -50,20 +50,19 @@ body {
 }
 
 .map {
-  background-image: url("../images/snazzy-image.png");
-  width: 420px;
+  height: 500px;
 }
 
 .bus-list {
   /*change this back to 50 - this was to see how it looks "with map" space - figure out how to actually do it later*/
   /**/
+  margin-top: 20px;
 }
 
 .bus-list div {
 /* border: .25%; */
   padding: 1.2%;
   margin-right: auto;
-  margin-bottom: 20px;
 }
 
  /*box which holds the information*/
@@ -83,6 +82,9 @@ body {
 }
 
 .eta {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #FB5669;
   width: 30px;
 }
 .arrow, .eta {
@@ -90,7 +92,8 @@ body {
   position: relative;
   vertical-align: middle;
   text-align: center;
-  justify-self: flex-end;
+  justify: flex-end;
+  margin-left: 5px;
 }
 
 /* alignment of the content as a whole in the infobox */
