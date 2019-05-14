@@ -50,6 +50,8 @@ body {
 }
 
 .map {
+
+  background-image: url("../images/snazzy-image.png");
   height: 500px;
 }
 
@@ -71,13 +73,9 @@ body {
   background-color: #F9F9F9;
   border-radius: 5px;
   box-shadow: 8px 10px 12px -8px rgba(0,0,0,0.75);
-  display: grid;
   font-weight: lighter;
-  grid-column-gap: 33px;
-  grid-template-columns: auto auto auto 20px;
   width: 380px;
   margin-left: auto;
-  margin-right: auto;
   margin-bottom: 20px;
 }
 
@@ -86,22 +84,27 @@ body {
   font-size: 1.2em;
   color: #FB5669;
   width: 30px;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
 }
-.arrow, .eta {
+
+.arrow{
   display: flex;
   position: relative;
   vertical-align: middle;
   text-align: center;
   justify: flex-end;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 /* alignment of the content as a whole in the infobox */
 .boxcontent {
   display: flex;
-  width: 90%;
+  width: 95%;
   vertical-align: middle;
   align-items: center;
+  padding: 10px;
 }
 
 .boxcontent h1 {
@@ -124,6 +127,11 @@ body {
   margin-left: 0.2em;
   /* margin-right: 0.2em; */
   margin-bottom: 0.2em;
+}
+
+.out-of-service, .reroute {
+	color: #FB5669;
+  text-transform: uppercase;
 }
 
 /*.location {
