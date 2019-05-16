@@ -40,12 +40,7 @@ body {
 }
 
 .search {
-  display: flex;
-  position: relative;
-  vertical-align: middle;
-  text-align: center;
-  justify: flex-end;
-  margin-left: 10px;
+  
 }
 
 .location {
@@ -103,6 +98,7 @@ body {
   position: relative;
   vertical-align: middle;
   text-align: center;
+  padding-right: 10px;
 }
 
 .chevron {
@@ -111,7 +107,7 @@ body {
   vertical-align: middle;
   text-align: center;
   justify: flex-end;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 /* alignment of the content as a whole in the infobox */
