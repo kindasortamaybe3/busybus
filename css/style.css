@@ -37,10 +37,11 @@ body {
   display: inline-block;
   font-size: 2em;
   padding-top: 15px;
+  width: 90%;
 }
 
-.search {
-  
+.fas {
+  color: #31077A;
 }
 
 .location {
@@ -55,21 +56,22 @@ body {
 }
 
 .map {
+  position: relative;
   background-image: url("../images/snazzy-image.png");
   height: 500px;
 }
 
 .busicon {
   position: absolute;
-  left: 57em;
-  top: 23em;
+  left: 29em;
+  bottom: 27em;
   z-index: 1;
 }
 
 .currentlocation {
   position: absolute;
-  left: 49em;
-  top: 40em;
+  left: 22em;
+  bottom: 7em;
   z-index: 1;
 }
 
