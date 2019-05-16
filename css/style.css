@@ -34,8 +34,18 @@ body {
 }
 
 .routes { /* NEED TO ADD ARROW */
+  display: inline-block;
   font-size: 2em;
   padding-top: 15px;
+}
+
+.search {
+  display: flex;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  justify: flex-end;
+  margin-left: 10px;
 }
 
 .location {
@@ -54,17 +64,24 @@ body {
   height: 500px;
 }
 
-.bus-list {
-  /*change this back to 50 - this was to see how it looks "with map" space - figure out how to actually do it later*/
-  /**/
-  margin-top: 20px;
+.busicon {
+  position: absolute;
+  left: 57em;
+  top: 23em;
+  z-index: 1;
 }
 
-.bus-list div {
-/* border: .25%; */
-  padding: 1.2%;
-  margin-right: auto;
+.currentlocation {
+  position: absolute;
+  left: 49em;
+  top: 40em;
+  z-index: 1;
 }
+
+.bus-list {
+  margin: 20px;
+}
+
 
  /*box which holds the information*/
 .infobox {
@@ -80,15 +97,15 @@ body {
 
 .eta {
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.8em;
   color: #FB5669;
-  width: 30px;
+  width: 50px;
   position: relative;
   vertical-align: middle;
   text-align: center;
 }
 
-.arrow{
+.chevron {
   display: flex;
   position: relative;
   vertical-align: middle;
@@ -110,27 +127,25 @@ body {
   font-size: 1.8em;
   color: #31077A;
   font-weight: bold;
-  line-height: auto /* 1.5em; */;
+  line-height: 25px;
 }
 
 .boxcontent h3 {
   display: flex;
   font-size: 1.4em;
   width: 320px;
+  line-height: 25px;
 }
 
 /* Directions: Northbound etc */
 .direction {
   width: 85%;
   font-size: 1em;
-  margin-left: 0.2em;
-  /* margin-right: 0.2em; */
-  margin-bottom: 0.2em;
+  margin: 0.5em;
 }
 
-.out-of-service, .reroute {
+h1.outofservice, h1.reroute {
 	color: #FB5669;
-  text-transform: uppercase;
 }
 
 /*.location {

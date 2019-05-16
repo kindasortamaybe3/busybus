@@ -9,18 +9,21 @@
   </head>
   <body>
     <section class="container">
-      <nav>
-          <div class="statusbar">
-              <img src="images/light-statusbar.png" class="navimage" alt="iOS statusbar">
-              <p class="routes">
-                <i class="fa fa-chevron-left fa-1x" aria-hidden="true"></i>
-                Suggested routes</p>
-              <p class="location">Washington & State</p>
-          </div>
-      </nav>
+      <header>
+        <nav class="statusbar">
+          <img src="images/light-statusbar.png" class="navimage" alt="iOS statusbar">
+            <p class="routes">
+              <i class="fa fa-chevron-left fa-1x" aria-hidden="true"></i>
+              Suggested routes</p>
+              <i class="fas fa-search"></i>
+            <p class="location">Washington & State</p>
+        </nav>
+      </header>
       <div class="map"></div>
-      <section class="bus-list">
-        <div class="infobox">
+      <img src="images/busicon.png" class="busicon">
+      <img src="images/currentlocation.png" class="currentlocation">
+      <main class="bus-list">
+        <section class="infobox">
           <ul class="boxcontent">
               <li class="direction">
                 <h1>60 - Randolph/Harbor Dr</h1>
@@ -28,12 +31,12 @@
                 <h3>Every 20 minutes</h3>
               </li>
                 <div class="eta">5 mins</div>
-              <div class="arrow">
                 <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
               </div>
             </ul>
-          </div>
-          <div class="infobox">
+          </section>
+        </div>
+          <section class="infobox">
             <ul class="boxcontent">
                 <li class="direction">
                   <h1>124 - Navy Pier</h1>
@@ -41,13 +44,13 @@
                   <h3>Every 10 minutes</h3>
                 </li>
               <div class="eta">5 mins</div>
-              <div class="arrow">
                 <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
               </div>
             </ul>
+            </section>
           </div>
         </div>
-        <div class="infobox">
+        <section class="infobox">
             <ul class="boxcontent">
               <li class="direction">
                 <h1>151 - Devon/Clark</h1>
@@ -55,13 +58,13 @@
                 <h3>Every 16 minutes</h3>
               </li>
             <div class="eta">5 mins</div>
-              <div class="arrow">
                 <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
               </div>
             </div>
+            </section>
           </ul>
         </div>
-        <div class="infobox">
+        <section class="infobox">
           <ul class="boxcontent">
             <li class="direction">
               <h1>J14 - 103rd / Stony Island</h1>
@@ -72,23 +75,23 @@
             <li class="arrow">
               <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
             </li>
+          </section>
           </ul>
         </div>
-         <div class="infobox">
+         <section class="infobox">
            <ul class="boxcontent">
-            <li class="direction">
-              <h1>Southbound</h1>
-              <h1>124</h1>
-              <h1>Navy Pier</h1>
-              <h3>Every 10 minutes</h3>
-            </li>
-              <div class="eta">5 mins</div>
-              <div class="arrow">
+              <li class="direction">
+                <h1>Southbound</h1>
+                <h1>124</h1>
+                <h1>Navy Pier</h1>
+                <h3>Every 10 minutes</h3>
+              </li>
+                <div class="eta">5 mins</div>
                 <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
-              </div>
             </ul>
+            </section>
           </div>
-        <div class="infobox">
+        <section class="infobox">
           <ul class="boxcontent">
             <li class="direction">
             <h1 class="reroute">Reroute</h1>
@@ -100,8 +103,9 @@
               <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
             </li>
           </ul>
+          </section>
         </div>
-        <div class="infobox">
+        <section class="infobox">
           <ul class="boxcontent">
             <li class="direction">
               <h1 class="outofservice">Out Of Service</h1>
@@ -113,8 +117,9 @@
               <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
             </li>
           </ul>
+          </section>
         </div>
-        <div class="infobox">
+        <section class="infobox">
           <ul class="boxcontent">
             <li class="direction">
               <h1>20 - Madison</h1>
@@ -125,8 +130,9 @@
               <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
             </li>
           </ul>
+          </section>
         </div>
-        <div class="infobox">
+        <section class="infobox">
           <ul class="boxcontent">
             <li class="direction">
               <h1>157 - Streeterville/Taylor</h1>
@@ -137,6 +143,7 @@
               <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
             </li>
           </ul>
+          </section>
         </div>
     </section>
   </body>
