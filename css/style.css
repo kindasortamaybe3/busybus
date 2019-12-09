@@ -70,7 +70,7 @@ body {
 
 .currentlocation {
   position: absolute;
-  left: 22em;
+  left: 20em;
   bottom: 7em;
   z-index: 1;
 }
